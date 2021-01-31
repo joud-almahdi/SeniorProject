@@ -8,15 +8,17 @@
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Profile</title>
+    <title>Followers</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-      <!--right slidebar-->
-      <link href="css/slidebars.css" rel="stylesheet">
+
+    <!--right slidebar-->
+    <link href="css/slidebars.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
@@ -258,12 +260,14 @@
                           <b class="caret"></b>
                       </a>
                       <ul class="dropdown-menu extended logout">
+                          <div class="log-arrow-up"></div>
                           <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
                           <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
                           <li><a href="#"><i class="fa fa-bell-o"></i> Notification</a></li>
                           <li><a href="login.html"><i class="fa fa-key"></i> Log Out</a></li>
                       </ul>
                   </li>
+
                   <!-- user login dropdown end -->
                   <li class="sb-toggle-right">
                       <i class="fa  fa-align-right"></i>
@@ -417,9 +421,9 @@
                           <li><a  href="people_directory.html">People Directory</a></li>
                           <li><a  href="coming_soon.html">Coming Soon</a></li>
                           <li><a  href="lock_screen.html">Lock Screen</a></li>
-                          <li class="active"><a  href="profile.html">Profile</a></li>
+                          <li><a  href="profile.html">Profile</a></li>
                           <li><a  href="invoice.html">Invoice</a></li>
-                          <li><a  href="project_list.html">Project List</a></li>
+                          <li class="active"><a  href="project_list.html">Project List</a></li>
                           <li><a  href="project_details.html">Project Details</a></li>
                           <li><a  href="search_result.html">Search Result</a></li>
                           <li><a  href="pricing_table.html">Pricing Table</a></li>
@@ -468,148 +472,73 @@
       <!--sidebar end-->
       <!--main content start-->
       <section id="main-content">
-          <section class="wrapper">
+          <section class="wrapper site-min-height">
               <!-- page start-->
-              <div class="row">
-                  <aside class="profile-nav col-lg-3">
-                      <section class="panel">
-                          <div class="user-heading round">
-                              <a href="#">
-                                  <img src="img/profile-avatar.jpg" alt="">
-                              </a>
-                              <h1>Jonathan Smith</h1>
-                              <p>jsmith@flatlab.com</p>
+              <section class="panel">
+                  <header class="panel-heading">
+                      Followers
+                      <span class="pull-right">
+                          <button type="button" id="loading-btn" class="btn btn-warning btn-xs"><i class="fa fa-refresh"></i> Refresh</button>
+                          <a href="profile.html" class=" btn btn-success btn-xs">Back</a>
+
+                      </span>
+                  </header>
+                  <div class="panel-body">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="input-group"><input type="text" placeholder="Search Here" class="input-sm form-control"> <span class="input-group-btn">
+                              <button type="button" class="btn btn-sm btn-success"> Go!</button> </span></div>
                           </div>
+                      </div>
+                  </div>
+                  <table class="table table-hover p-table">
+                      <thead>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td class="p-team">
+                            <a href="#"><img alt="image" class="" src="img/chat-avatar.jpg"></a>
+                            <a href="project_details.html">Ahmed Ali</a>
+                        </td>
+                          <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                          <td>
+                            <button type="button" class="btn btn-success">Follow Back</button>
+                        </td>
 
-                          <ul class="nav nav-pills nav-stacked">
-                              <li class="active"><a href="profile.html"> <i class="fa fa-user"></i> Profile</a></li>
-                              <li><a href="Followers.html"> Followers <span class="label label-danger pull-right r-activity">4</span></a></li>
-                              <li><a href="Following.html"> Following <span class="label label-danger pull-right r-activity">9</span></a></li>
-                              <li><a href="profile-edit.html"> <i class="fa fa-edit"></i> Edit profile</a></li>
-                          </ul>
-
-                      </section>
-                  </aside>
-                  <aside class="profile-info col-lg-9">
-                      <section class="panel">
-                          <div class="panel-body bio-graph-info">
-                              <h1>Bio Graph</h1>
-                              <div class="row">
-                                  <div class="bio-row">
-                                      <p><span>First Name </span>: Jonathan</p>
-                                  </div>
-                                  <div class="bio-row">
-                                      <p><span>Last Name </span>: Smith</p>
-                                  </div>
-                                  <div class="bio-row">
-                                      <p><span>Gender </span>: Male</p>
-                                  </div>
-                                  <div class="bio-row">
-                                      <p><span>Email </span>: jsmith@flatlab.com</p>
-                                  </div>
-                              </div>
-                          </div>
-                      </section>
-                      <section>
-                          <div class="row">
-                              <div class="col-lg-6">
-                                  <div class="panel">
-                                      <div class="panel-body">
-                                          <div class="bio-desk">
-                                              <h4 class="red">Published Research</h4>
-                                              <table class="table">
-                              <tbody>
-                              <tr>
-                                  <td>Characteristics of supraglottitis in adult</td>
-                                  <td><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></td>
-                                  <td><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td>
-                              </tr>
-                              <tr>
-                                  <td>Short term managment of vocal fold paralysis</td>
-                                  <td><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></td>
-                                  <td><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td>
-                              </tr>
-                              </tbody>
-                          </table>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-lg-6">
-                                  <div class="panel">
-                                      <div class="panel-body">
-                                          <div class="bio-desk">
-                                              <h4 class="terques">Favorable Journal</h4>
-                                              <table class="table">
-                              <tbody>
-                              <tr>
-                                  <td>Al- noor journal </td>
-                                  <td><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td></tr>
-                              </tbody>
-                          </table>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-lg-6">
-                                  <div class="panel">
-                                      <div class="panel-body">
-                                          <div class="bio-desk">
-                                              <h4 class="green">Favorable Research </h4>
-                                              <table class="table">
-                              <tbody>
-                              <tr>
-                                  <td>Controlling and preventing oral compliaction in cancer patitent</td>
-                                  <td><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td></tr>
-                              </tbody>
-                          </table>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-lg-6">
-                                  <div class="panel">
-                                      <div class="panel-body">
-
-                                          <div class="bio-desk">
-                                              <h4 class="purple">Project Group</h4>
-                                              <table class="table">
-                              <thead>
-                              <tr>
-                                  <th>Title</th>
-                                  <th>Starting date</th>
-                                  <th>Status</th>
-                                  <th></th>
-                              </tr>
-                              </thead>
-                              <tbody>
-                              <tr>
-                                  <td>Testing vaccines on animal - concern</td>
-                                  <td>4/12/2020</td>
-                              <td><span class="label label-primary">Active</span></td>
-                              <td><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></td>
-                              <td><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td>
-                              </tr>
-                              <tr>
-
-                                  <td>Increased life expectancy: a burden on the healthcare system</td>
-                                  <td>4/12/2019</td>
-                                  <td><span class="label label-default">Inactive</span></td>
-                                  <td><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button></td>
-                                  <td><button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button></td>
-                              </tr>
-
-                              </tbody>
-                          </table>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </section>
-                  </aside>
-              </div>
-
+                      </tr>
+                      <tr>
+                            <td class="p-team">
+                                <a href="#"><img alt="image" class="" src="img/chat-avatar2.jpg"></a>
+                                <a href="project_details.html">Abdullah Rasied</a>
+                            </td>
+                            <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                          <td>
+                              <button type="button" class="btn btn-default">Unfollow</button>
+                            </td>
+                      </tr>
+                      <tr>
+                        <td class="p-team">
+                            <a href="#"><img alt="image" class="" src="img/pro-ac-1.png"></a>
+                            <a href="project_details.html">Noora Abdullah</a>
+                        </td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                      <td>
+                          <button type="button" class="btn btn-default">Unfollow</button>
+                      </td>
+                      </tr>
+                      <tr>
+                        <td class="p-team">
+                          <a href="#"><img alt="image" class="" src="img/pro-ac-2.png"></a>
+                            <a href="project_details.html">Joe Don</a>
+                        </td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                      <td>
+                          <button type="button" class="btn btn-default">Unfollow</button>
+                      </td>
+                      </tr>
+                      </tbody>
+                  </table>
+              </section>
               <!-- page end-->
           </section>
       </section>
@@ -777,22 +706,13 @@
     <script src="js/bootstrap.min.js"></script>
     <script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/slidebars.min.js"></script>
     <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
-    <script src="assets/jquery-knob/js/jquery.knob.js"></script>
     <script src="js/respond.min.js" ></script>
-
-  <!--right slidebar-->
-  <script src="js/slidebars.min.js"></script>
 
     <!--common script for all pages-->
     <script src="js/common-scripts.js"></script>
 
-  <script>
-
-      //knob
-      $(".knob").knob();
-
-  </script>
 
 
   </body>
