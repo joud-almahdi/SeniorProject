@@ -82,12 +82,15 @@ $(".form_datetime").datetimepicker({
 });
 
 
-$(".form_datetime-component").datetimepicker({
-    format: "dd MM yyyy - hh:ii",
-    autoclose: true,
-    todayBtn: true,
-    pickerPosition: "bottom-left"
-});
+$('#education-range input').each(function () {
+        $(this).datepicker({
+            autoclose: true,
+            format: " yyyy",
+            viewMode: "years",
+            minViewMode: "years"
+        });
+        $(this).datepicker('clearDates');
+    });
 
 $(".form_datetime-adv").datetimepicker({
     format: "dd MM yyyy - hh:ii",
