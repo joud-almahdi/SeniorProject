@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'researchm',
+
 ]
 
 MIDDLEWARE = [
@@ -78,7 +80,6 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'HOST': '127.0.0.1',
         'PORT': '3306',
-
         'NAME':'rms_database',
         'USER': 'root',
         'PASSWORD': 'sql123',
